@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+	<div data-role="page" id="page1">
+		<div data-role="panel" id="panel1" data-display="overlay" data-theme="b">
+			<form>
+				<h3>로그인</h3>
+				<Table for="name"> 사용자명:</Table>
+				<input name="name" id="name" type="text" value="" data-mini="true" data-clear-btn="true">
+				<Table for="password">비밀번호</Table>
+				<input name="password" id="password" type="password" value="" data-mini="true" data-clear-btn="true">
+				<div class="ui-grid-a">
+					<div class="ui-block-a"><a href="#" data-role="button" data-rel="close">취소</a></div>
+					<div class="ui-block-b"><a href="#" data-role="button" data-rel="close">저장</a></div>
+				</div>
+				<br/>
+				<center>
+				<a href="#page5" data-transition="pop"> 회원가입 </a>
+				</center>
+			</form>
+		</div>
+		<div data-role="header">
+			<h1>평창 휘닉스 파크</h1>
+			<a href="#panel1" class="ui-btn ui-corner-all ui-shadow ui-btn-right" data-inline="true">로그인</a>
+		</div>
+		<center>
+			<div data-role="content">
+				<h2>스노우보드 100% 즐기기</h2>
+				<img src="snow1.jpg" width="350">
+				<ul data-role="listview" data-inset="true">
+					<li><a href="#page11" data-transition="pop">평창 휘닉스 소개</a></li>
+					<li><a href="#page2" data-transition="pop">나의 추억 사진</a></li>
+					<li><a href="#page9">슬로프 소개</a></li>
+					<li><a href="https://www.google.com/maps/place/%ED%9C%98%EB%8B%89%EC%8A%A4+%ED%8F%89%EC%B0%BD/@37.582865,128.3238855,18z/data=!4m11!1m2!2m1!1z7ZyY64uJ7IqkIO2PieywvQ!3m7!1s0x3562358dd6a694f7:0x6bd333b0ae48a355!5m2!4m1!1i2!8m2!3d37.582901!4d128.324822?hl=ko" target="_blank">위치 보기</a></li>
+
+				</ul>
+			</div>
+
+			<div data-role="footer" data-position="fixed">
+				<h4>Copyrightⓒ LeeSJ</h4>
+			</div>
+
+		</center>
+	</div>
+
+	<!DOCTYPE html>
+
+	<div data-role="page" id="page2">
+		<div data-role="header">
+			<a role="button" href="javascript:void(0);" class="ui-btn ui-corner-all ui-shadow ui-btn-left ui-toolbar-back-btn ui-icon-carat-l ui-btn-icon-left" data-rel="back">Back</a>
+			<a href="#page1" class="ui-btn ui-corner-all ui-shadow ui-btn-right ui-icon-home ui-btn-icon-right">Home</a>
+			<h1>나의 추억 사진</h1>
+		</div>
+		<div data-role="content">
+			<div data-role="tabs" id="dashboard-tabs">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#tab1"> I </a></li>
+						<li><a href="#tab2"> II </a></li>
+						<li><a href="#tab3"> III </a></li>
+						<li><a href="#tab4"> IV </a></li>
+					</ul>
+				</div>
+				<div id="tab1">
+					<center>
+						<br/><br/><br/>
+						<img src="m1.jpg" width="340px" height="500px">
+					</center>
+				</div>
+				<div id="tab2">
+					<center>
+						<br/><br/><br/>
+						<img src="m2.jpg" width="340px" height="500px">
+					</center>
+				</div>
+				<div id="tab3">
+					<center>
+						<br/><br/><br/>
+						<img src="m3.jpg" width="340px" height="500px">
+					</center>
+				</div>
+				<div id="tab4">
+					<center>
+						<br/><br/><br/>
+						<img src="m4.jpg" width="340px" height="500px">
+					</center>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h4>Copyrightⓒ LeeSJ</h4>
+		</div>
+	</div>
+
+
+	<div data-role="page" id="page11">
+		<div data-role="header" data-position="fixed">
+			<h1>평창 휘닉스 파크</h1>
+			<div data-role="navbar" >
+				<a role="button" href="javascript:void(0);" class="ui-btn ui-corner-all ui-shadow ui-btn-left ui-toolbar-back-btn ui-icon-carat-l ui-btn-icon-left" data-rel="back">Back</a>
+				<a href="#page1" class="ui-btn ui-corner-all ui-shadow ui-btn-right ui-icon-home ui-btn-icon-right">Home</a>
+				<ul>
+					<li><a href="#page11" class="ui-btn-active ui-state-persist">슬로프 소개</a></li>
+					<li><a href="#page12">슬로프 전경</a></li>
+					<li><a href="#page13">슬로프 야경</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="content">
+			<img src="c1.jpg" width="350" height="300"><br><br/>
+			대한민국 강원도 평창군 봉평면 태가로 174에 있는 종합리조트 및 스키장, 골프장이다.
+			2018 평창 동계올림픽의 스키 및 스노보드 종목 경기장이다. 슬로프가 스노보더들에게
+			최적화 되어있어 많은 스노보더들의 발길을 이끄는 곳이다. 슬로프는 총 22개로 국내 2위를
+			자랑한다.
+			<br><br>
+			여의도 면적의 두 배가 넘는 660만㎡(약 200만평)의 부지에 낮은 기온, 많은 적설량, 국내 최고의 제설 능력 및 설질로 이름이 높다.
+			설계는 일본의 모리건설이 맡았고, 해발 1,050m의 태기산 기슭의 지형을 그대로 살렸다.
+			면온IC의 실질적인 존재 의의이며, 이 곳 덕에 면온리는 물론이고, 봉평면의 상권이 유지된다고 볼 수 있다. 또한 올림픽 이후 열악한 한국의 설상종목 선수 육성의 중추적인 역할을 하게 될 곳이다.
+		</div>
+
+		<div data-role="footer">
+			<h4>Copyrightⓒ LeeSJ</h4>
+		</div>
+	</div>
+
+
+	<div data-role="page" id="page9">
+		<div data-role="header">
+			<h1>슬로프 소개</h1>
+			<a role="button" href="javascript:void(0);" class="ui-btn ui-corner-all ui-shadow ui-btn-left ui-toolbar-back-btn ui-icon-carat-l ui-btn-icon-left" data-rel="back">Back</a>
+			<a href="#page1" class="ui-btn ui-corner-all ui-shadow ui-btn-right ui-icon-home ui-btn-icon-right">Home</a>
+		</div>
+
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-e">백야 스노우보딩</div><br/>
+			<video controls width="100%" preload="metadata">
+				<source src="snowboard.mp4" type="video/mp4">
+			</video>
+		</div>
+
+		<div data-role="collapsible">
+			<h3>초급</h3>
+			<h6>초급 코스</h6>
+			<p>초급 코스로는 도도, 펭귄, 키위등이 인기 슬로프이다.
+			도도는 처음부터 끝까지 평탄한 코스로 초보자가 스키 또는 보드와
+			친해지기 좋은 슬로프이다.</p>
+		</div>
+
+		<div data-role="collapsible">
+			<h3>중급</h3>
+			<h6>중급 코스</h6>
+			<p>중급 코스로는 듀크와 밸리, 호크가 인기 슬로프이다.
+			스키장 최정상인 몽블랑에서 출발 할 수 있는 밸리는
+			중급중에서도 가장 스릴있는 슬로프이다.</p>
+		</div>
+
+		<div data-role="collapsible">
+			<h3>상급</h3>
+			<h6>상급 코스</h6>
+			<p>필자는 아직 상급코스를 타지 못한다.</p>
+		</div>
+
+		<div data-role="collapsible">
+			<h3>최상급</h3>
+			<h6>최상급 코스</h6>
+			<p>마찬가지로 최상급 코스를 아직 타지 못한다.</p>
+			<source src="snowboard.mp4" type="video/mp4">
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Copyrightⓒ LeeSJ</h4>
+		</div>
+
+	</div>
+
+	<div data-role="page" id="page12">
+		<div data-role="header" data-position="fixed">
+			<h1>평창 휘닉스 파크</h1>
+			<div data-role="navbar" >
+				<a role="button" href="javascript:void(0);" class="ui-btn ui-corner-all ui-shadow ui-btn-left ui-toolbar-back-btn ui-icon-carat-l ui-btn-icon-left" data-rel="back">Back</a>
+				<a href="#page1" class="ui-btn ui-corner-all ui-shadow ui-btn-right ui-icon-home ui-btn-icon-right">Home</a>
+				<ul>
+					<li><a href="#page11">슬로프 소개</a></li>
+					<li><a href="#page12" class="ui-btn-active ui-state-persist">슬로프 전경</a></li>	
+					<li><a href="#page13">슬로프 야경</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="content">
+			<img src="b2.jpg" width="350" height="300"><br><br/>
+			대한민국 강원도 평창군 봉평면 태가로 174에 있는 종합리조트 및 스키장, 골프장이다.
+			2018 평창 동계올림픽의 스키 및 스노보드 종목 경기장이다. 슬로프가 스노보더들에게
+			최적화 되어있어 많은 스노보더들의 발길을 이끄는 곳이다. 슬로프는 총 22개로 국내 2위를
+			자랑한다.
+			<br><br>
+			여의도 면적의 두 배가 넘는 660만㎡(약 200만평)의 부지에 낮은 기온, 많은 적설량, 국내 최고의 제설 능력 및 설질로 이름이 높다.
+			설계는 일본의 모리건설이 맡았고, 해발 1,050m의 태기산 기슭의 지형을 그대로 살렸다.
+			면온IC의 실질적인 존재 의의이며, 이 곳 덕에 면온리는 물론이고, 봉평면의 상권이 유지된다고 볼 수 있다. 또한 올림픽 이후 열악한 한국의 설상종목 선수 육성의 중추적인 역할을 하게 될 곳이다.
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Copyrightⓒ LeeSJ</h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="page13">
+		<div data-role="header" data-position="fixed">
+			<h1>평창 휘닉스 파크</h1>
+			<div data-role="navbar" >
+				<a role="button" href="javascript:void(0);" class="ui-btn ui-corner-all ui-shadow ui-btn-left ui-toolbar-back-btn ui-icon-carat-l ui-btn-icon-left" data-rel="back">Back</a>
+				<a href="#page1" class="ui-btn ui-corner-all ui-shadow ui-btn-right ui-icon-home ui-btn-icon-right">Home</a>
+				<ul>
+					<li><a href="#page11">슬로프 소개</a></li>
+					<li><a href="#page12">슬로프 전경</a></li>	
+					<li><a href="#page13" class="ui-btn-active ui-state-persist">슬로프 야경</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="content">
+			<img src="c2.jpg" width="350" height="300"><br><br/>
+			대한민국 강원도 평창군 봉평면 태가로 174에 있는 종합리조트 및 스키장, 골프장이다.
+			2018 평창 동계올림픽의 스키 및 스노보드 종목 경기장이다. 슬로프가 스노보더들에게
+			최적화 되어있어 많은 스노보더들의 발길을 이끄는 곳이다. 슬로프는 총 22개로 국내 2위를
+			자랑한다.
+			<br><br>
+			여의도 면적의 두 배가 넘는 660만㎡(약 200만평)의 부지에 낮은 기온, 많은 적설량, 국내 최고의 제설 능력 및 설질로 이름이 높다.
+			설계는 일본의 모리건설이 맡았고, 해발 1,050m의 태기산 기슭의 지형을 그대로 살렸다.
+			면온IC의 실질적인 존재 의의이며, 이 곳 덕에 면온리는 물론이고, 봉평면의 상권이 유지된다고 볼 수 있다. 또한 올림픽 이후 열악한 한국의 설상종목 선수 육성의 중추적인 역할을 하게 될 곳이다.
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Copyrightⓒ LeeSJ</h4>
+		</div>
+	</div>
+
+		<div data-role="page" id="page5">
+		<div data-role="header">
+			<h1>스키 동아리</h1>
+		</div>
+		<div data-role="content">
+
+			<form method="get" action="form.jsp">
+				<h2>평창 휘닉스 스키강습 가입</h2>
+				<fieldset>
+					<legend>※ 필수 정보</legend>
+					<table>
+						<tr>
+							<td><label for="s_name">이름</label></td>
+							<td><input name="s_name" id="s_name" disabled="disabled" data-role="none"></td>
+						</tr>
+					</table>
+				</fieldset><br/>
+
+				<fieldset>
+					<legend>부가 정보</legend>
+					전화번호 : <input type="text" name="s_tel" placeholder="999-999-9999" data-role="none"><br/>
+					가입날짜 : <input type="date" name="s_date" value="2014-11-11" data-role="none"><br/>
+					성별 : <select data-role="none">
+						<option value="male">남자</option>
+						<option value="female">여자</option>
+					</select><br/>
+					초등학생 <input type="radio" name="s_year" value="1" data-role="none">
+					중학생 <input type="radio" name="s_year" value="2" data-role="none">
+					고등학생 <input type="radio" name="s_year" value="3" data-role="none">
+					성인 <input type="radio" name="s_year" value="4" data-role="none">
+					<br/>나이 : <input type="number" name="syear" min="1" max="100" value="20" data-role="none">
+				</fieldset><br/>
+				<a href="#page1"><input type="submit" value="확인" data-role="none"></a>
+				<a href="#page1"><input type="reset" value="취소" data-role="none"></a>
+			</form>
+		</div>
+		<div data-role="footer" class="ui-bar" data-position="fixed">
+			<div data-role="controlgroup" data-type="horizontal">
+		</div>
+	</div>
+</body>
+</html>
